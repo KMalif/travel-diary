@@ -1,0 +1,25 @@
+@import '@styles/base';
+
+.banner {
+    min-height: 70vh;
+    max-height: 70vh;
+    background-image: url('../../static/images/bg-baner.png');
+
+    .container {
+        color: #FFFFFF;
+        margin: 60px;
+        .jumbotronTitle {
+            font-size: 60px;
+            font-weight: 100;
+            font-style: italic;
+            line-height: 70px;
+            letter-spacing: -3%;
+          }
+        .jumbotronSubtitle {
+            // font-weight: 200;
+            font-style: normal;
+            font-size: 24px;
+        }
+    }
+}
+

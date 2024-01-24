@@ -1,0 +1,82 @@
+@import '@styles/base';
+
+.headerWrapper {
+    position: sticky;
+    top: 0;
+    margin-inline: 3rem;
+    .contentWrapper {
+      @include directionX;
+      color: var(--color-text);
+      padding: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1rem;
+  
+      .logoImage {
+        @include directionX;
+        cursor: pointer;
+        align-items: center;
+  
+        .logo {
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: 0.5rem;
+        }
+        .title {
+          font-weight: 700;
+        }
+      }
+  
+      .toolbar {
+        @include directionX;
+        gap: 20px;
+        .buttonLogin {
+          width: 124px;
+          height: 29px;
+          flex-shrink: 0;
+          color: #FFFFFF;
+          text-align: center;
+          border: 2px solid #FFFFFF;
+          background: transparent;
+          border-radius: 4px;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          cursor: pointer;
+        }
+        .buttonRegis {
+          width: 124px;
+          height: 29px;
+          flex-shrink: 0;
+          color: #FFFFFF;
+          text-align: center;
+          border: 1px solid #408eba;
+          background: #408eba;
+          border-radius: 4px;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+.menu {
+    @include directionX;
+    align-items: center;
+  
+    .menuAvatar {
+      width: 1rem;
+      height: 1rem;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      margin-right: 0.5rem;
+    }
+  
+    .menuLang {
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,41 @@
+@import '@styles/base';
+
+.searchContainer {
+    @include directionX;
+    margin-inline: 3rem;
+
+    input {
+        width: 90%;
+        font-size: 16px;
+        background-color: #FFFFFF;
+        padding: 15px;
+        border-radius: 8px;
+        border: none;
+        margin-top: 10px;
+        outline: none;
+        font-weight: 500;
+        &:focus {
+          border-color: blue;
+        }
+        &::placeholder {
+          color: gray;
+        }
+    }
+
+    button {
+        width: 10%;
+        color: #FFFFFF;
+        text-align: center;
+        border: 1px solid #408eba;
+        background: #408eba;
+        border-radius: 4px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        border-radius: 8px;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    
+}
